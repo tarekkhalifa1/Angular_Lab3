@@ -1,0 +1,17 @@
+<h1>Students List</h1>
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Name</th>
+      <th>Age</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor=" let student of getStudentData">
+      <td>{{student.id}}</td>
+      <td>{{student.name}}</td>
+      <td>{{student.age}}</td>
+    </tr>
+  </tbody>
+</table>

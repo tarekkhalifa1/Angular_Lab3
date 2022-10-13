@@ -1,0 +1,72 @@
+h1 {
+    color: green;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.registration {
+    margin: 20px auto;
+    width: 50%;
+    height: 300px;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    border-radius: 50px;
+}
+
+.error_sign {
+    font-size: 1.5rem;
+    color: red
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+.success_sign {
+    font-size: 1.5rem;
+    color: green;
+}
+
+.success {
+    font-size: 1.5rem;
+    color: green;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+.registration .form-control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.registration label {
+    font-size: 1.4rem;
+}
+
+.registration input {
+    padding: 7px;
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+}
+
+.registration input[type="button"] {
+    cursor: pointer;
+    padding: 10px 120px;
+    border-radius: 20px;
+    border: none;
+    background-color: green;
+    opacity: .7;
+    color: white;
+}
+
+.registration input[type="button"]:hover {
+    opacity: 1;
+}

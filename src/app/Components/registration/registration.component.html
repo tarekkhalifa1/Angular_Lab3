@@ -1,0 +1,44 @@
+<h1>
+    New Student
+</h1>
+<div class="registration">
+    <div class="form-control">
+        <label>Name</label>
+        <input type="text" [(ngModel)]="name" placeholder="enter your name">
+        <div class="error_sign" *ngIf="name.length  >= 0 && name.length < 3; else validName">
+            x
+        </div>
+        <ng-template #validName>
+            <div class="success_sign" *ngIf="name.length != 0">
+                ✓
+            </div>
+        </ng-template>
+    </div>
+    <div class="error">
+        {{errorName}}
+    </div>
+
+    <div class="form-control">
+        <label>Age</label>
+        <input type="number" [(ngModel)]="age" placeholder="enter your age">
+        <div class="error_sign" *ngIf="age < 20  || age > 40; else validAge">
+            x
+        </div>
+        <ng-template #validAge>
+            <div class="success_sign">
+                ✓
+            </div>
+        </ng-template>
+    </div>
+    <div class="error">
+        {{errorAge}}
+    </div>
+    <div class="form-control">
+        <input type="button" value="Add student" (click)="addStudent()">
+    </div>
+
+    <div class="success">
+        {{successMsg}}
+    </div>
+
+</div>
